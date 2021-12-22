@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: com.bestchat.thirdparty.sdk.shopify.api.ShopAPITest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 1.625 sec <<< FAILURE!
+com.bestchat.thirdparty.sdk.shopify.api.ShopAPITest.testGet()  Time elapsed: 1.621 sec  <<< FAILURE!
+java.lang.IllegalArgumentException: argument "content" is null
+	at com.fasterxml.jackson.databind.ObjectMapper._assertNotNull(ObjectMapper.java:4757)
+	at com.fasterxml.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:3040)
+	at com.bestchat.thirdparty.sdk.shopify.api.Rest.strToJsonNode(Rest.java:34)
+	at com.bestchat.thirdparty.sdk.shopify.api.ShopAPI.get(ShopAPI.java:17)
+	at com.bestchat.thirdparty.sdk.shopify.api.ShopAPITest.testGet(ShopAPITest.java:18)
+
